@@ -1,0 +1,21 @@
+CONSEILS
+Ce devoir est en autocorrection. Il va vous permettre de savoir où vous en êtes dans la progression
+votre apprentissage.
+Une fois que vous avez terminé, relisez attentivement votre travail en reprenant l’intitulé pour vous
+assurer de n’avoir oublié aucune consigne. Un soin tout particulier devra être apporté aux liens, aux
+images afin que l’affichage soit correct et que vous n’ayez pas de lien mort.
+Travaillez exercice par exercice. Vous réalisez un premier exercice, puis lorsque vous pensez avoir
+poussé celui-ci du plus loin que vous le pensez, regardez le corrigé.
+
+
+Exercice 1
+Soit la variable x = 4 et la variable y = 2.
+Écrivez le code JavaScript permettant de soustraire x à y et de multiplier le tout par 22,2.
+Stockez le résultat dans la variable result et affichez cette variable à l’aide de l’instruction document.write.
+Code
+
+Exercice 2
+Soit x = 3 et y = 4.
+Écrivez de la manière la plus concise les expressions suivantes : x = x + y, x = x / y, x = x*y, x = x - y.
+Pour chaque expression, affichez sur une ligne séparée la variable x à l’aide de l’instruction document.write.
+Code
