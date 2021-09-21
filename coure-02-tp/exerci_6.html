@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+  <h1>Exercice 6 </h1>
+  <p>Soit x = 4, y = 5 et z = null.</br>
+    Stockez le résultat des tests suivants dans la variable résultat et affichez leur résultat à l’aide de l’instruction</p>
+    <p>document.write :<br/>
+      –– x différent de y OU z est nul ;<br/>
+      –– z est nul ou z égale 0 ;<br/>
+      –– x plus petit ou égal à 200 et y plus grand ou égale à 0 ;<br/>
+      –– x, y ou z sont nuls ;<br/>
+      –– x contient une valeur ;<br/>
+      –– z n’est pas vide ET x plus grand que y ET z plus petit ou égal y.  </p>
+
+      <script type="text/javascript">
+
+      var x = 4;
+      var y = 5;
+      var z;
+      var resultat;
+      result = (x != y || !z);
+      document.write( result +'<br/>');
+      result = (!z || z == 0);
+      document.write( result +'<br/>');
+      result = (x <= 200 && y >= 0);
+      document.write( result +'<br/>');
+      result = (!x || !y || !z);
+      document.write( result +'<br/>');
+      result = (!!x);
+      document.write( result +'<br/>');
+      result = (z != ""  && x > y && z <= y);
+      document.write( result +'<br/>');
+
+      </script>
+    </body>
+    </html>
