@@ -2,7 +2,7 @@
 <html lang="fr" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>exo auto N7</title>
 </head>
 <body>
   <h1>Exercice 7</h1>
@@ -14,18 +14,77 @@
     <p>Si titre ou nom n’est pas renseigné ou si titre, indiquez-le affichant l’un des messages suivants :<br>
       ”Le titre doit être renseigné!” ou ”Le nom doit être renseigné!”.</p>
 
-      <p>Si titre contient une valeur qui n’est ni ”Monsieur” ni ”Madame”, indiquez le en affichant le message suivant : </p>
-      <p>”Je ne connais pas ce titre : titre”.</p>
-      <p>Faites varier titre et nom selon le tableau suivant et ré-exécutez chaque fois votre programme :</p>
-      <p>________________________________________________________________________________________________________</p>
+      <p>Si titre contient une valeur qui n’est ni ”Monsieur” ni ”Madame”, indiquez le en affichant le message suivant :<br>
+        ”Je ne connais pas ce titre : titre”.</p>
+        <p>Faites varier titre et nom selon le tableau suivant et ré-exécutez chaque fois votre programme :</p>
 
-      <script type="text/javascript">
+        <table>
+          <thead>
+            <tr>
+              <td>valeur</td> <td> valeur de nom </td> <td>Message affiché </td>
+            </tr>
+          </thead>
 
-      var titre = " Madame ";
-      var nom = "Dupond ";
+          <tbody>
+            <tr>
+              <td>Madame</td> <td>Dupond</td> <td>Bonjour Madame Dupond! </td>
+            </tr>
+            <tr>
+              <td>Monsieur</td> <td>Dupond</td> <td>Bonjour Monsieur Dupond! </td>
+            </tr>
+            <tr>
+              <td>Toto</td> <td>Dupond</td> <td>Je ne connais pas ce titre : Toto</td>
+            </tr>
+            <tr>
+              <td>null</td> <td>Dupond</td> <td>Le titre doit être renseigné</td>
+            </tr>
+            <tr>
+              <td>Madame</td> <td>null</td> <td>Le nom doit être renseigné</td>
+            </tr>
+          </tbody>
 
-      document.write("Bonjour" + titre + nom  +"<br/>")
-      </script>
+          <tfoot>
+            <tr>
+              <td>valeur</td> <td> valeur de nom </td> <td>Message affiché </td>
+            </tr>
+          </tfoot>
+        </table>
 
-    </body>
-    </html>
+        <p>________________________________________________________________________________________________________</p>
+
+          <!-- le fichier toujour script js doit etre lue en denier -->
+
+          <!-- let et la manier moderne decrir var .
+              __ es vrais ?
+              __Il y a t'il une difernse ? -->
+
+          <!-- on peut utilser les ``  touche clavier altGR + 7
+
+          `et concatener comme cela ${titre}` -->
+
+        <script type="text/javascript">
+        document.write("Bonjour jeune padaoine que le javascript soit avec toie ! <br/>");
+
+
+          var titre = "Madame"; // a fair varier ?
+          var nom = null; // a fair varier ?
+          if (!titre) {
+            document.write("Le nom doit être renseigné" + "<br/>");
+          }
+          else if (!nom) {
+            document.write("Le nom doit être renseigné");
+          }
+          else if (titre != "Monsieur" && titre != "Madame") {
+            document.write("Je ne connais pas ce titre:" + titre +"<br/>" );
+          }
+          else {
+            document.write("Bonjour"+ " " + titre +" "+ nom  + "<br/>");
+          }
+          
+          document.write(typeof titre);
+          console.log(typeof titre);
+
+        </script>
+
+      </body>
+      </html>
