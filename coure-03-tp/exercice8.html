@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 8</title>
+  </head>
+  <body>
+    <h1>Exercice 8</h1>
+
+    <p>Reprenez l’exercice précédent en ajoutant ”Mademoiselle” comme titre accepté et en simplifiant votre <br>
+    programme grâce à l’instruction Switch case.<br>
+    Ré-exécutez votre programme en faisant varier les variables selon le tableau suivant :</p>
+
+    <script type="text/javascript">
+      var titre = "Madame"; // a fair varier ?
+      var nom = "Dupond"; // a fair varier ?
+      var resutat;
+      switch (titre) {
+        case null:
+          document.write("Le titre doit être renseigné<br/>");
+          break;
+          case "Madame" :
+          case "Monsieur" :
+          case "Mademoiselle" :
+          if (!nom) {
+            document.write("Le nom doit être renseigné<br/>");
+          }
+          else {
+            document.write("Bonjour"+ " " + titre +" "+ nom  + "<br/>");
+          }
+        break;
+        default: document.write("Je ne connais pas ce titre:" + titre +"<br/>");
+      }
+
+    </script>
+
+  </body>
+</html>
