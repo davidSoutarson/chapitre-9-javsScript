@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 10</title>
+</head>
+<body>
+
+  <h1> Exercice 10 </h1>
+
+  <p>Écrivez une boucle while qui afficher le résultat du calcul suivant : 1/(x-7) en faisant varier i de 0 à 8. </p>
+  <p>N’oubliez pas d’incrémenter x afin d’éviter une boucle infinie, et de tenir compte du cas où le calcul est
+    impossible (affichez ”calcul impossible”).</p>
+    <p>En fin de boucle afficher le message ”Fin de boucle”.</p>
+
+    <script type="text/javascript">
+
+    var x=0;
+    var i = 8; // tour de boucle repte i x le Calcule.
+
+     document.write( "valeur de x = " + x + "</br>");
+     document.write( "valeur de i = " + i + "</br> </br>");
+
+    while (x <= i){
+      if (x == 7) {
+        document.write("</br>cacule encour " + 1 + " / " +( x -7 )+"</br>  Calcule impossible </br> </br>")
+      } else {
+        document.write( "</br>cacule encour " + 1 + " / " +( x -7 )+"</br>");
+
+        document.write((1 / (x - 7)) + "</br>");
+      }
+    x++;
+    }
+    document.write("Fin de boucle </br>");
+
+    </script>
+
+
+
+
+  </body>
+  </html>
