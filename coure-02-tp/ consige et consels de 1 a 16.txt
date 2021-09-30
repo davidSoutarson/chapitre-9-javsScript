@@ -19,3 +19,96 @@ Soit x = 3 et y = 4.
 Écrivez de la manière la plus concise les expressions suivantes : x = x + y, x = x / y, x = x*y, x = x - y.
 Pour chaque expression, affichez sur une ligne séparée la variable x à l’aide de l’instruction document.write.
 Code
+
+
+Exercice 3
+Afficher ʺ J’aime les tomates, les cerises et les poires.ʺ à l’aide de l’instruction document.write et des
+variables a, b c et d.
+
+Exercice 4
+Soit la variable codeRetour = 0.
+À l’aide de l’instruction document.write, affichez la phrase suivante :
+Code retour codeRetour. Leserveur dit : "tout est ok".
+
+
+Exercice 5
+Soit x = 3 et y = 8, écrivez et affichez à l’aide de document.write le résultat (_true_ ou false) les comparaisons
+suivantes :
+–– x est plus petit que y ;
+–– x est plus grand ou égale à y ;
+–– x est égale y ;
+–– x est différent de y ;
+–– x est plus petit ou égale à y
+
+
+Exercice 6
+Soit x = 4, y = 5 et z = null.
+Stockez le résultat des tests suivants dans la variable résultat et affichez leur résultat à l’aide de l’instruction
+document.write :
+–– x différent de y OU z est nul ;
+–– z est nul ou z égale 0 ;
+–– x plus petit ou égal à 200 et y plus grand ou égale à 0 ;
+–– x, y ou z sont nuls ;
+–– x contient une valeur ;
+–– z n’est pas vide ET x plus grand que y ET z plus petit ou égal y.
+
+
+_______________________Les condition js___________________________
+
+Exercice 7
+Soit titre = ”Madame” et nom = ”Dupond”.
+Affichez à l’aide de document.write le ”Bonjour Madame nom” ou ”Bonjour Monsieur nom” selon la valeur de
+titre et de nom.
+Si titre ou nom n’est pas renseigné ou si titre, indiquez-le affichant l’un des messages suivants :
+”Le titre doit être renseigné!” ou ”Le nom doit être renseigné!”.
+Si titre contient une valeur qui n’est ni ”Monsieur” ni ”Madame”, indiquez le en affichant le message suivant :
+”Je ne connais pas ce titre : titre”.
+Faites varier titre et nom selon le tableau suivant et ré-exécutez chaque fois votre programme :
+
+
+Exercice 8
+Reprenez l’exercice précédent en ajoutant ”Mademoiselle” comme titre accepté et en simplifiant votre
+programme grâce à l’instruction Switch case.
+Ré-exécutez votre programme en faisant varier les variables selon le tableau suivant :
+
+
+Exercice 9
+Soit titre = Mademoiselle.
+En utilisant l’opérateur ternaire, écrivez la logique suivante : si titre est null ou n’est pas
+”Mademoiselle” ou ”Monsieur” ou ”Madame” alors resultat = ”ok” sinon resultat = ”nok”.
+Affichez le résultat.
+Ré-exécutez votre programme en faisant varier la valeur de titre selon le tableau suivant :
+
+_______________________Les boucle while ,do…while , for js________________________________
+____________________________est l’instruction continue._____________________________
+
+Exercice 10
+Écrivez une boucle while qui afficher le résultat du calcul suivant : 1/(x-7) en faisant varier i de 0 à 8.
+N’oubliez pas d’incrémenter x afin d’éviter une boucle infinie, et de tenir compte du cas où le calcul est
+impossible (affichez ”calcul impossible”).
+En fin de boucle afficher le message ”Fin de boucle”.
+
+
+Exercice 11
+Reprendre l’exercice précédent et transformez-le en utilisant une boucle do…while.
+
+
+Exercice 12
+Reprenez l’exercice précédent et transformez-le en utilisant une boucle for.
+
+
+Exercice 13
+Reprenez l’exercice précédent et modifiez-le en replaçant le block if..else par un simple if en utilisant
+l’instruction continue.
+
+_____________________Demandez à l’utilisateur de Saisir____________________
+
+Exercice 14
+Demandez à l’utilisateur de Saisir son nom à l’aide d’une boite de saisie :
+1. S’il annule la saisie, demandez-lui s’il veut réessayer. Si oui, réaffichez la boite de dialogue précédente, sinon
+affichez une boite d’alerte avec le message
+”Saisie annulée” puis quittez le programme.
+2. Si après la saisie, le nom est vide (ou est égale à son initialisation), affichez une alerte : ”Le nom ne peut être
+vide”. L’alerte acquittée, réafficher la boite de saisie.
+3. Si après la saisie le nom est renseigné, affichez une boite d’alerte avec le nom saisi (”Votre nom est : ….”)
+puis quittez le programme.
