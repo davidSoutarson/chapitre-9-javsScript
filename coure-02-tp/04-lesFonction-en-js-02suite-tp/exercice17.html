@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>erxercie 17</title>
+</head>
+<body>
+
+  <h1>Exercice 17</h1>
+  <h2>VII. Les fonction js</h2>
+  <p>
+    Reprenez l’exemple précédent et instanciez un nouvel objet Vin (vin2) avec les propriétés suivantes :
+  </p>
+  <p>Puis, affichez pour vin1 et vin2 :</p>
+  <ul>
+    <li> la liste des propriétés et leur valeur ;</li>
+    <li> le montant pour chaque vin ;</li>
+    <li> le montant total.</li>
+  </ul>
+
+
+  <table>
+    <thead>
+      <tr>
+        tableau exemple:
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>propriété :</td>
+        <td>valeur vin1</td>
+        <td>valeur vin2</td>
+      </tr>
+
+      <tr>
+        <td>Marque :</td>
+        <td>Saint julient</td>
+        <td>Saint Estèphe </td>
+      </tr>
+
+      <tr>
+        <td>Année :</td>
+        <td>1997</td>
+        <td>2003</td>
+      </tr>
+
+      <tr>
+        <td>Prix :</td>
+        <td>37€</td>
+        <td>14€</td>
+      </tr>
+
+      <tr>
+        <td>Quantité :</td>
+        <td>1</td>
+        <td>6</td>
+      </tr>
+
+    </tbody>
+  </table>
+  <hr>
+  <p>Pour plus de presition voire code source OU inspeter dans navigateur</p>
+  <p>fonction et la operateur <strong>this</strong> javascript</p>
+  <p>
+    <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/this">? Tout savoire sur <strong>this</strong> en ligne </a>
+    Source : site MDM : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/this
+  </p>
+
+  <p>
+    <a href="https://www.w3schools.com/js/js_this.asp">? Tout savoire sur <strong>this</strong> en ligne </a>
+    Source : site W3Schools: https://www.w3schools.com/js/js_this.asp
+  </p>
+
+  <hr>
+
+
+  <script type="text/javascript">
+  function Vin(marque, annee, prix) { //construteur
+    this.marque = marque;
+    this.annee = annee;
+    this.prix = prix;
+    this.quantite = 1;
+    this.montant = function() {
+      return this.quantite * this.prix;
+    }
+  }
+  var vin1 = new Vin("Saint Estèphe", "2003", 14 );
+  vin1.quantite = 6;
+  var vin2 = new Vin("Saint julient" , "1997", 37);
+  vin2.quantite = 1;
+  /*
+  //Affichage
+  */
+
+  var total = 0;
+  var montant;
+
+  // vin 1
+  document.write("Marque: " + vin1.marque +"</br>");
+  document.write("Annee: " + vin1.annee + "</br>");
+  document.write("Quantité: " + vin1.quantite + "</br>");
+  document.write("Prix: " + vin1.prix + "€</br>");
+  montant = vin1.montant();
+  document.write("Montant: " + montant + "€</br>");
+  total +=montant
+  document.write("</br>");
+  // vin 2
+  document.write("Marque: " + vin2.marque +"</br>");
+  document.write("Annee: " + vin2.annee + "</br>");
+  document.write("Quantité: " + vin2.quantite + "</br>");
+  document.write("Prix: " + vin2.prix + "€</br>");
+  montant = vin2.montant();
+  document.write("Montant: " + montant + "€</br>");
+  total +=montant
+  document.write("</br>");
+  document.write("Total: " + total + "€</br>");
+
+</script>
+
+</body>
+</html>

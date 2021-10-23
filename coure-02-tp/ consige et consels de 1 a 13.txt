@@ -102,6 +102,7 @@ Reprenez l’exercice précédent et modifiez-le en replaçant le block if..else
 l’instruction continue.
 
 _____________________Demandez à l’utilisateur de Saisir____________________
+___________(cour n2 partie V ) Affichage des boîtes de dialogue_____________
 
 Exercice 14
 Demandez à l’utilisateur de Saisir son nom à l’aide d’une boite de saisie :
@@ -112,3 +113,10 @@ affichez une boite d’alerte avec le message
 vide”. L’alerte acquittée, réafficher la boite de saisie.
 3. Si après la saisie le nom est renseigné, affichez une boite d’alerte avec le nom saisi (”Votre nom est : ….”)
 puis quittez le programme.
+
+
+Exercice 15
+Soit la variable x.
+À l’aide d’une boucle For, faites varier la variable de 5 à 0 et pour chaque valeur calculée 2/(y – x).
+Utilisez try…catch pour capturer l’erreur qui adviendra quand x sera égale à 2 (division par zéro). Utilisez
+document.write. Dans les autres cas affichez le résultat du calcul.

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 14</title>
+</head>
+<body>
+  <h1>Exercice 14</h1>
+  <h2>Demandez à l’utilisateur de Saisir son nom à l’aide d’une boite de saisie :</h2>
+  <p>
+    1. S’il annule la saisie, demandez-lui s’il veut réessayer. Si oui, réaffichez la boite de dialogue précédente, sinon<br>
+    affichez une boite d’alerte avec le message <br> <br>
+    ”Saisie annulée” puis quittez le programme.
+  </p>
+  <p>
+    2. Si après la saisie, le nom est vide (ou est égale à son initialisation), affichez une alerte : ”Le nom ne peut être<br>
+    vide”. L’alerte acquittée, réafficher la boite de saisie.
+  </p>
+  <p>
+    3. Si après la saisie le nom est renseigné, affichez une boite d’alerte avec le nom saisi (”Votre nom est : ….”)<br>
+    puis quittez le programme.
+  </p>
+
+  <script type="text/javascript">
+    var nom;
+    var redo;
+
+    do {
+      nom = prompt("Saisiser votre non", "Votre nom ici");
+      document.write(nom+ "titi</br>");
+      switch (nom) {
+        case null:
+        redo = comfirm("voulez vous réessayer?");
+        break;
+        case "" :
+        alert("Le nom et peut être vide");
+        redo = true;
+        break;
+        case "Votre nom ici":
+        alert("Le nom ne peut etre vide");
+        redo = true;
+        break
+        default:
+        alert("Votre non est" + nom);
+      }
+    }
+    while (redo);
+
+  </script>
+
+</body>
+</html>
