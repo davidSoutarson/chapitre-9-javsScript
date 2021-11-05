@@ -1,0 +1,16 @@
+var x = 4;
+var y = 5;
+var z;
+var resultat;
+result = (x != y || !z);
+document.write( result +'<br/>');
+result = (!z || z == 0);
+document.write( result +'<br/>');
+result = (x <= 200 && y >= 0);
+document.write( result +'<br/>');
+result = (!x || !y || !z);
+document.write( result +'<br/>');
+result = (!!x);
+document.write( result +'<br/>');
+result = (z != ""  && x > y && z <= y);
+document.write( result +'<br/>');
