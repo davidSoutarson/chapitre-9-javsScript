@@ -1,3 +1,20 @@
+function validerLeFormulaire(){
+  var nom = document.forms["monFormulaire"]["nom"].value;
+  if(nom == null || nom ==""){
+    alert("Le nom doit être spécifié");
+    return false;
+  }
+  var email = document.forms["monFormulaire"]["email"].value;
+    if (email == null ) {
+      alert("L'email doit être spécifié");
+        return false;
+    }
+    if (/@/.test(email) == false){
+    alert("L'email doit comporté un caracter @");
+      return false;
+      }
+}
+
 function Vin(marque, annee, prix) { //construteur
   this.marque = marque;
   this.annee = annee;
@@ -27,7 +44,4 @@ vins.forEach(function(vin){
   total += montant;
   document.write("</br>");
 })
-/*
-//Affichage
-*/
 document.write("Total:" + total + "€</br>")

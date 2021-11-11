@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC"-//W3C//DTD HTML 4.01//EN"http://www.w3.org/TR/html4/strict.dtd">
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>exo</title>
+  </head>
+  <body>
+
+    <h1>exercie 19</h1>
+
+    <script type="text/javascript">
+       <!--
+         function validerLeFormulaire(){
+           var nom = document.forms["monFormulaire"]["nom"].value;
+           if(nom == null || nom ==""){
+             alert("Le nom doit être spécifié");
+             return false;
+           }
+           var email = document.forms["monFormulaire"]["email"].value;
+             if (email == null  || email ==""){
+               alert("L'email doit être spécifié");
+                 return false;
+             }
+             if (/@/.test(email) == false){
+             alert("L'email doit comporté un caracter @");
+               return false;
+               }
+         }
+
+        -->
+    </script>
+
+
+
+        <form clase="" name="monFormulaire" action="exo19.html" onsubmit="return validerLeFormulaire()"
+        method="post">
+          Nom : <input type="text" name="nom" >
+          <br>
+          Email: <input type="text" name="email" >
+          <br>
+          <input type="submit"  value="Envoyer">
+        </form>
+
+      </body>
+    </html>
