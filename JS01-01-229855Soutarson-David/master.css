@@ -1,0 +1,108 @@
+#wraper{
+  width: 890px;
+  margin: 0 auto;
+}
+
+.font-grisClaire{
+  background-color: rgba( 211, 211, 211, 0.5);
+  padding: 5px
+}
+
+.titre-bleux{
+  color: rgba(0, 0, 255, 1.0);
+  padding: 5px;
+  margin: 0;
+}
+
+.titre-grasGris{
+  color: rgba(105, 105, 105, 1.0);
+  padding: 5px;
+  margin: 0;
+}
+
+.text-gris{
+    color: rgba(105, 105, 105, 0.6);
+    padding: 5px;
+    margin: 0;
+}
+
+.text-grisFoncer{
+  color: rgba(105, 105, 105, 1.0);
+  padding: 5px;
+  margin: 0;
+}
+
+ol{
+  margin: 5px;
+  padding:  5px;
+}
+
+li{
+  padding: 10px 0;
+}
+
+.sans-type{
+  list-style-type: none;
+}
+nav{
+  padding: 15px;
+  border: solid 1px black;
+}
+
+#navigation {
+  margin: 0 ;
+  padding: 0 ;
+  list-style: none ;
+  text-align: center ;
+}
+
+#navigation li {
+  display: inline;
+  margin-right: 1px ;
+}
+
+#navigation li a {
+  padding: 4px 20px ;
+  border: 1px solid black;
+  font: 1em "Trebuchet MS",Arial,sans-serif ;
+  line-height: 1em ;
+  text-align: center ;
+  text-decoration: none ;
+}
+
+#navigation li a:hover, #navigation li a:focus, #navigation li a:active {
+  background: blue ;
+  color:#fff;
+  text-decoration: underline ;
+}
+
+.page{
+  padding: 5px;
+}
+
+
+.colone{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.gauche{
+  grid-column: 1 ;
+  grid-row: 1
+}
+
+.droit{
+  grid-column: 2 ;
+  grid-row: 1
+}
+
+p.droitDroit{
+  text-align: right;
+}
+
+footer{
+
+  border: solid 1px black
+}

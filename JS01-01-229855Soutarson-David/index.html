@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Débuter en JavaScipt: devoir 1</title>
+  <link rel="stylesheet" href="master.css">
+
+</head>
+<body>
+  <div id="wraper">
+     <header>
+      <div class="colone">
+        <div class="gauche">
+          <p>Nom: Soutarson</p>
+          <p>Prenom: David</p>
+        </div>
+        <div class="droit">
+          <p class = "droitDroit">MW0911DV01CD01</p>
+          <p>N° d'éléve: 229855</p>
+        </div>
+      </div>
+
+    </header>
+    <main class="page">
+
+      <article id="realisation" class="realisation">
+
+        <h2 class= "titre-bleux">Réalisation</h2>
+
+
+      <div>
+
+          <form id="chifreMister" name="chifreMister" action="" method="post" >
+
+            <label
+              for="chiffreSesie"><h3>vous devez deviner un chiffre entre 1 et <span id= "maxValue"></span> en <span id="userTentatives"></span> coups / tentatives</h3>
+               <p>vous avez joué: <span id= "coup">0</span> coup.</p>
+
+               <p>Chiffre saisi: <span id= "aficheSesie" >...</span></p>
+
+               <p>il ne vous reste que: <span id= "coupRestant">?</span> coups pour deviner le chiffre mystère</p>
+
+               <h3 id="resulta">Bonne chance!</h3>
+
+            </label>
+
+            <div>
+            <p>Entrez votre chiffre ici:
+               <input id="chiffreSesie" type="text" name="chiffreSesie"  size="4" value=""> </p>
+
+            <input type="submit" name= "coup"  value="coup" onclick= "return testeChiffre()">
+
+          </form>
+
+      </div>
+
+      <p id ="result"> <p>
+
+        <script type="text/javascript" src="script.js"> </script>
+
+      </article>
+      <!-- fin wraper -->
+
+  </main >
+
+   <footer>
+    <p>Devoir</p>
+    <p>réaliser par: David Soutarson</p>
+  </footer>
+</div>
+</body>
+</html>

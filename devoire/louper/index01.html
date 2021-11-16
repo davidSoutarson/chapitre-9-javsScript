@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Débuter en JavaScipt: devoir 1</title>
+  <link rel="stylesheet" href="master.css">
+
+</head>
+<body>
+  <div id="wraper">
+     <header>
+      <div class="colone">
+        <div class="gauche">
+          <p>Nom: Soutarson</p>
+          <p>Prenom: David</p>
+        </div>
+        <div class="droit">
+          <p class = "droitDroit">MW0911DV01CD01</p>
+          <p>N° d'éléve: 229855</p>
+        </div>
+      </div>
+      <nav>
+        <ul id =navigation>
+          <li><a href="#objectif">objectif</a></li>
+          <li><a href="#consigne">consigne</a></li>
+          <li><a href="#realisation">realisation</a></li>
+        </ul>
+      </nav>
+
+    </header>
+    <main class="page">
+
+
+       <article id="objectif" class="objectif">
+        <h1>Débuter en JavaScipt: devoir 1</h1>
+
+        <div class="font-grisClaire">
+          <h2 class= "titre-grasGris">Obectifs:</h2>
+          <p class="text-gris">Ce devoir a pour objectif de valider les bases de JavaScript :</p>
+          <ul>
+            <li class="text-gris"> comprendre les bases du développement ;</li>
+            <li class="text-gris"> savoir créer une fonction et l’utiliser ; </li>
+            <li class="text-gris"> savoir créer une fonction et l’utiliser ; </li>
+          </ul>
+          <h3 class= "titre-grasGris">Durrée</h3>
+          <p class="text-gris"><strong class="text-grisFoncer">Temps estimatif à consacrer à votre devoir :</strong> 1 heure 30.</p>
+          <h3 class= "titre-grasGris">Baréme</h3>
+          <p class="text-gris"><strong class="text-grisFoncer">Question 1:</strong> 5 points</p>
+          <p class="text-gris"><strong class="text-grisFoncer">Question 2:</strong> 10 points</p>
+          <p class="text-gris"><strong class="text-grisFoncer">Question 3:</strong> 5 points</p>
+
+        </div>
+      </article> -->
+       <article id="consigne" class="consigne">
+
+        <h2 class= "titre-bleux"> Devoir n°1</h2>
+
+        <h3 class= "titre-grasGris">Demande</h3>
+
+        <div class="colone">
+          <div class="gauche">
+            <p >
+              Vous allez créer un jeu où l’utilisateur devra deviner
+              <br>un chiffre entre 1 et 100 généré aléatoirement par
+              <br>l’ordinateur.
+            </p>
+            <ol >
+              <li >
+                Créer un fichier HTML comportant un formulaire
+                <br>avec un champ de saisie texte et un bouton de
+                <br>validation faisant appel à une fonction JavaScript.
+              </li>
+              <li >
+                Créer un fichier JavaScript externe, lié au fichier
+                <br>HTML, qui :
+                <ol type="a">
+                  <li>
+                    Génère un nombre entier entre 1 et 100 (vous
+                    <br>pouvez vous aider d’Internet pour trouver la solution),
+                  </li>
+                  <li>
+                    Affiche une alerte si l’utilisateur ne saisit pas un
+                    <br>nombre — exemple : « Vous devez indiquer un
+                    <br>nombre ! »
+                  </li>
+                  <li>
+                    Affiche une alerte si le nombre saisi est inférieur au
+                    <br>nombre généré — exemple : « Le nombre indiqué est
+                    <br>trop petit » ;
+                  </li>
+                  <li>
+                    Affiche une alerte si le nombre saisi est supérieur
+                    <br>au nombre généré — exemple : « Le nombre indiqué
+                    <br>est trop grand »
+                  </li>
+                  <li>
+                    Affiche une alerte si le nombre saisi est égal au
+                    <br>nombre généré — exemple : « Vous avez gagné ! ».
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </div>
+
+          <div class="droit">
+            <ol class ="sans-type">
+              <li >
+                3. Ajouter au fichier JavaScript :
+                <ol type="a">
+                  <li>
+                    Un prompt indiquant — au premier chargement
+                    <br>du fichier HTML — à l’utilisateur le nombre maximal
+                    <br>de tentatives,
+                  </li>
+                  <li>
+                    Si à la dernière tentative, l’utilisateur n’a pas trouvé
+                    <br>le nombre généré, afficher une alerte — exemple :
+                    <br>« Vous avez perdu ! »
+                  </li>
+                </ol>
+              </li>
+            </ol>
+
+            <p>
+              Les fichiers devront être livrés sous la forme d’une
+              <br>archive .zip
+            </p>
+            <h3 class= "titre-grasGris ">Conseils</h3>
+            <p>
+              Pensez à bien concevoir votre fonction, le plus
+              <br>simplement possible, en prenant en compte tous les
+              <br>scénarios indiqués.
+            </p>
+            <p>
+              Créez une archive .zip comprenant votre fichier
+              <br>HTML et JavaScript.
+            </p>
+          </div>
+
+        </div> <!-- fin div colone -->
+        <hr>
+
+       </article>
+
+      <article id="realisation" class="realisation">
+
+        <h2 class= "titre-bleux">Réalisation</h2>
+
+
+      <div>
+        <form id="chifreMister" name="chifreMister" action="" onsubmit= "return trouveLeChiffre()" >
+
+          <label for="chiffreSesie">vous devez deviner un chiffre entre 1 et <span id= "maxValue"></span></label>
+
+          <div>
+          <p>entre vautre chiffre ici:
+             <input id="chiffreSesie" type="text" name="chiffreSesie" size="4" value=""> </p>
+
+          <input type="submit"  value="envoyer">
+
+        </form>
+      </div>
+
+      <p id ="result"> <p>
+
+        <script type="text/javascript" src="script.js"> </script>
+
+      </article>
+      <!-- fin wraper -->
+
+  </main >
+
+
+
+
+ <footer>
+    <p>Devoire</p>
+    <p>raliser par:</p>
+    <p>David soutarson</p>
+
+      <nav>
+        <ul id =navigation>
+          <li><a href="#objectif">objectif</a></li>
+          <li><a href="#consigne">consigne</a></li>
+          <li><a href="#realisation">realisation</a></li>
+        </ul>
+      </nav>
+
+
+
+  </footer>
+</div>
+</body>
+</html>
