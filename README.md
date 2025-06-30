@@ -1,9 +1,10 @@
 #Chapitre 9 - JavaScript
+<p>
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Build Status](https://github.com/davidSoutarson/chapitre-9-javsScript/actions/workflows/main.yml/badge.svg)](https://github.com/davidSoutarson/chapitre-9-javsScript/actions)
 [![Issues](https://img.shields.io/github/issues/davidSoutarson/chapitre-9-javsScript.svg)](https://github.com/davidSoutarson/chapitre-9-javsScript/issues)
 [![npm version](https://img.shields.io/npm/v/chapitre-9-javsScript.svg)](https://www.npmjs.com/package/chapitre-9-javsScript)
-
+</p>
 Ce dépôt contient les exercices et exemples pratiques du chapitre 9 du cours/de la formation JavaScript.
 
 ## Description
