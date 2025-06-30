@@ -33,5 +33,6 @@ Ouvrez les fichiers .html ou .js dans votre éditeur préféré ou directement d
 Les contributions sont les bienvenues !
 N’hésitez pas à ouvrir une issue ou à proposer une pull request.
 
-## Licence
-Ce projet est sous licence MIT.
+## Licence et langage
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/fr/docs/Web/HTML) [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/fr/docs/Web/JavaScript) [![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/fr/docs/Web/CSS)
+
